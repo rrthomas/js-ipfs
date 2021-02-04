@@ -82,6 +82,7 @@ module.exports = ({ blockService, pin, gcLock, preload }) => {
           cidVersion = options.version
         }
 
+        // @ts-ignore - this needs review
         const multihash = await multihashing(block, mhtype)
         const cid = new CID(cidVersion, format, multihash)
 
