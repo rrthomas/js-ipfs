@@ -97,6 +97,7 @@ The last step of this tutorial is retrieving the file back using the `cat` 😺 
 
 ```js
 const IPFS = require('ipfs')
+const uint8ArrayConcat = require('uint8arrays/concat')
 
 async function main () {
   const node = await IPFS.create()
